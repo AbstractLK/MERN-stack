@@ -15,11 +15,12 @@ function App() {
           <div className="max-w-6xl mx-auto pt-20">
               <Routes>
                   <Route path='/' element={<Home/>}></Route>
+                  <Route path='/MERN-stack' element={<Home/>}></Route>
                   <Route path='/about' element={<About/>}></Route>
                   <Route path='/contact' element={<ContactUs/>}></Route>
                   <Route path='/itemList' element={<ItemList/>}></Route>
                   <Route path='/item/:title' element={<Item/>}></Route>
-                  {/*<Route path='*' element={<NotFound/>}></Route>*/}
+                  <Route path='*' element={<NotFound/>}></Route>
               </Routes>
           </div>
       </Router>
