@@ -19,7 +19,7 @@ function App() {
                   <Route path='/contact' element={<ContactUs/>}></Route>
                   <Route path='/itemList' element={<ItemList/>}></Route>
                   <Route path='/item/:title' element={<Item/>}></Route>
-                  <Route path='*' element={<NotFound/>}></Route>
+                  {/*<Route path='*' element={<NotFound/>}></Route>*/}
               </Routes>
           </div>
       </Router>
