@@ -1,5 +1,5 @@
 
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavbarPage from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -15,7 +15,6 @@ function App() {
           <div className="max-w-6xl mx-auto pt-20">
               <Routes>
                   <Route path='/' element={<Home/>}></Route>
-                  <Route path='/MERN-stack' element={<Home/>}></Route>
                   <Route path='/about' element={<About/>}></Route>
                   <Route path='/contact' element={<ContactUs/>}></Route>
                   <Route path='/itemList' element={<ItemList/>}></Route>
