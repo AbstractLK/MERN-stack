@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Card, Col, Container, Row} from "react-bootstrap";
 import {useParams} from "react-router-dom";
 import data from "./data";
@@ -10,6 +10,12 @@ import ProductsComponents from "../components/ProductsComponent";
 const Item = () => {
     const {title} = useParams();
     const item = data.find((x) => x.title === title);
+    const [productInfo, setProductInfo] = useState({comments: [] });
+
+    useEffect(() => {
+       console.log('Component mounted');
+    });
+
     if (!item) return <NotFound/>;
     const otherProducts = data.filter(x => x.title !== title);
 
